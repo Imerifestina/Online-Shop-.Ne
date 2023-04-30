@@ -149,7 +149,7 @@ namespace Online_Shop.Views
 
             return View(contact);
         }
-
+        // by id
         // POST: Contacts/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
