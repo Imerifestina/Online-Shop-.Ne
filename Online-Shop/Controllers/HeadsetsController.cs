@@ -96,7 +96,7 @@ namespace Online_Shop.Controllers
         }
 
         // GET: Headsets/Create
-        [Authorize(Roles = "Editor")]
+        [Authorize(Roles = "EDITOR")]
         public IActionResult Create()
         {
             return View();
@@ -119,7 +119,7 @@ namespace Online_Shop.Controllers
         }
 
         // GET: Headsets/Edit/5
-        [Authorize(Roles = "Editor")]
+        [Authorize(Roles = "EDITOR")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -171,7 +171,7 @@ namespace Online_Shop.Controllers
         }
 
         // GET: Headsets/Delete/5
-        [Authorize(Roles = "Editor")]
+        [Authorize(Roles = "EDITOR")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
